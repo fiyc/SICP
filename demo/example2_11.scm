@@ -1,15 +1,18 @@
 ;;有理数的算术运算
 ;;得到分子为x, 分母为y的有理数
 (define (make-rat x y)
-  body)
+  (cons x y))
+;(define make-rate cons)
 
 ;;获得有理数x的分子
 (define (numer x)
-  body)
+  (car x))
+;(define numer car)
 
 ;;获得有理数x的分母
 (define (denom x)
-  body)
+  (cdr y))
+;(define numer cdr)
 
 (define (add-rat x y)
   (make-rat (+ (* (numer x) (denom y))
