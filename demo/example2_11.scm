@@ -11,7 +11,7 @@
 
 ;;获得有理数x的分母
 (define (denom x)
-  (cdr y))
+  (cdr x))
 ;(define numer cdr)
 
 (define (add-rat x y)
@@ -39,3 +39,10 @@
 (define (equal-rate? x y)
   (= (* (numer x) (denom y))
      (* (numer y) (denom x))))
+
+(define (print-x x)
+  (newline)
+  (display (numer x))
+  (display " / ")
+  (display (denom x))
+)

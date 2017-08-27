@@ -16,3 +16,14 @@
 
 (define (sqrt x)
 	(sqrt-iter 1 x))
+
+
+(define rate (+ (/ 0.04 12) 1))
+(define month-input 3000)
+(define (power time)
+	(define (iter index result)
+	  (if (> index (* 12 time))
+	    result
+	    (iter (+ index 1) (+ (* result rate) month-input))))
+(display "base: ") (display (* month-input 12 time))
+  (iter 1 0))

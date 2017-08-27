@@ -27,7 +27,7 @@
               (x-point (end-segment segment)))
            2.0)
         (/ (+ (y-point (start-segment segment))
-              (y-point (end-segment segment)))
+              (y-point (end-segmenpusht segment)))
            2.0)))
 
 (define (print-point point)
