@@ -1,4 +1,7 @@
 ;;SICP 练习2.8
+(define (make-interval x y)
+  (cons x y))
+
 (define (upper-bound y)
   (cdr y))
 (define (lower-bound y)
