@@ -1,5 +1,5 @@
 ;;SICP 练习2.49
-(load "ece2_48.scm")
+(load "0072_2_48.scm")
 
 (define (segments->painter segment-list)
   (lambda (frame) 
