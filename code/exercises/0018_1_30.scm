@@ -1,11 +1,5 @@
 ;;SICP 练习1.30 sum方法由递归转迭代
 ;;递归sum
-(define (sum term next a b)
-  (if (> a b)
-       0
-       (+ (term a)
-          (sum term next (next a) b))))
-
 
 ;;迭代sum
 (define (new-sum term next a b)

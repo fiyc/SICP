@@ -1,9 +1,5 @@
 ;;辛普森规则求积分
-(define (sum term next a b)
-  (if (> a b) 
-  	  0
-      (+ (term a)
-         (sum term next (next a) b))))
+(load "../demos/sum.scm")
 
 ;;h/3(y[0] + 4y[1] + 2y[2] + 4y[3] + ...+ 2y[n-2] + 4y[n-1] y[n])
 ;;h = (b - a)/n
