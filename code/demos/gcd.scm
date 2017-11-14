@@ -2,3 +2,6 @@
   (if (= b 0)
 	b
 	(gcd b (remainder a b))))
+
+
+
