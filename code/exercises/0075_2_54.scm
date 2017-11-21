@@ -1,0 +1,12 @@
+(define (equal? tree1 tree2)
+  (cond ((and (not (pair? tree1)) (not (pair? tree2)))
+		 (eq? tree1 tree2))
+		((and (pair? tree1) (pair? tree2))
+		 (and (equal? (car tree1) (car tree2)) (equal? (cdr tree1) (cdr tree2))))
+		(else false)))
+
+(define a '(1 2 3))
+(define b '(1 2 3))
+(define c '(3 2 1))
+(define d '(1 (2) 3))
+(define e '(1 (2 3)))
