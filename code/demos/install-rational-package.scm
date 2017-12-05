@@ -31,7 +31,14 @@
 	(put 'div '(rational rational)
 			 (lambda (x y) (tag (div-rat x y))))
 	(put 'make 'rational
-			 (lambda (n d) (tag (make-rat n d))))
+		 (lambda (n d) (tag (make-rat n d))))
+	(put 'equ? '(rational rational)
+		 (lambda (r1 r2)
+		   (= (* (numer r1) (denom r2))
+			  (* (denom r1) (numer r2)))))
+	(put '=zero? 'rational
+		 (lambda (r)
+		   (= 0 (numer r))))
 	'done)
 
 (define (make-rational n d)
